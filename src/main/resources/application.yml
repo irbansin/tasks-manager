@@ -1,0 +1,16 @@
+
+server:
+  port: 8989
+
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: create #strategy to create / update db while build
+    show-sql: true #see logging of create table in console
+    properties:
+      hibernate:
+        format_sql=true #see logging of create table in console
+
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:file:./test
